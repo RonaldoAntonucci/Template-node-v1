@@ -1,0 +1,17 @@
+{
+  "name": "Robot",
+  "version": "1.0.0",
+  "description": "Bot para wpp",
+  "main": "src/index.ts",
+  "author": "Ronaldo Antonucci <ronaldo.antonuccivrb32@yahoo.com.br>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^17.0.24",
+    "@typescript-eslint/eslint-plugin": "^5.19.0",
+    "@typescript-eslint/parser": "^5.19.0",
+    "eslint": "^8.13.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "typescript": "^4.6.3"
+  }
+}
