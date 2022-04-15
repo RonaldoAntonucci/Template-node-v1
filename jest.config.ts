@@ -20,7 +20,7 @@ export default {
   collectCoverage: false,
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
-  // collectCoverageFrom: undefined,
+  collectCoverageFrom: ['<rootDir>/src/**/*.ts'],
 
   // The directory where Jest should output its coverage files
   coverageDirectory: 'coverage',
@@ -81,7 +81,10 @@ export default {
   // ],
 
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
-  // moduleNameMapper: {},
+  moduleNameMapper: {
+    '@/__tests__/(.*)': '<rootDir>/tests/$1',
+    '@/(.*)': '<rootDir>/src/$1',
+  },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
   // modulePathIgnorePatterns: [],
@@ -117,9 +120,7 @@ export default {
   // rootDir: undefined,
 
   // A list of paths to directories that Jest should use to search for files in
-  // roots: [
-  //   "<rootDir>"
-  // ],
+  roots: ['<rootDir>/__tests__'],
 
   // Allows you to use a custom runner instead of Jest's default test runner
   // runner: "jest-runner",
