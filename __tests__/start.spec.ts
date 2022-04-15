@@ -1,4 +1,4 @@
-import { Start } from '../src/start';
+import { Start } from '@/index';
 
 describe('Start', () => {
   const start = new Start();
